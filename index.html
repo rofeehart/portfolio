@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <h1 class="logo">Portfolio</h1>
-      <ul>
+    <nav class="bg-[black] text-white flex items-center justify-between sm:p-[50px] sm:h-[10px] p-[10px]">
+      <h1 class="logo sm:text-[50px] text-[30px]">Portfolio</h1>
+      <ul class="flex items-center sm:text-[16px] sm:gap-[25px] gap-[10px] text-[13px] pr-[20px]">
         <a href="#"><li>Home</li></a>
         <a href="#about"><li>About</li></a>
         <a href="#services"><li>Services</li></a>
@@ -21,12 +22,58 @@
       </ul>
     </nav>
     <section class="info">
-      <h1>I am Rofiyat Kamorudeen</h1>
-      <p>Rookie</p>
+      <h1 class="text-[30px] sm:text-[50px]">I am Rofiyat Kamorudeen</h1>
+      <p class="sm:text-[30px]">Rookie</p>
     </section>
-    <div id="about">
-      <section class="about-me">
-        <h2>About me</h2>
+    <div id="about" class=" w-[90%] m-[auto] mt-[50px] rounded-[10px] shadow-[grey_0px_0px_10px] p-5 flex sm:flex-row flex-col sm:items-center items-center ">
+      <section class="w-[50%] sm:w-[50%] w-[90%] ">
+        <div class="profile flex lg:flex-row flex-col">
+            <img class=" h-[300px] lg:w-[50%] w-[100%] border"
+              src="./download.jpg"
+            />
+          <div class="profile-info pt-3 lg:p-3">
+            <p><b>Name:</b> Rofiyat Kamorudeen</p>
+            <br />
+            <p><b>Profile:</b> Frontend Developer</p>
+            <br />
+            <p><b>Email:</b> rofeehartkam@gmail.com</p>
+            <br />
+            <p><b>Phone:</b> +234 703-5678-122</p>
+          </div>
+        </div>
+        <div style="height: fit-content" class="skills pt-3">
+          <h3 class="text-xl font-bold mb-3">Skills</h3>
+          <div>
+            <div style="height: fit-content; padding: 0; " class="html-range flex justify-between">
+              <p style="margin: 0;" >HTML</p>
+              <p style="margin: 0;">100%</p>
+            </div>
+            <div class="range mb-2">
+              <div class="html"></div>
+            </div>
+          </div>
+          <div>
+            <div class="css-range flex justify-between">
+              <p style="margin: 0;" style="margin: 0;">CSS</p>
+              <p style="margin: 0;">50%</p>
+            </div>
+            <div class="range mb-2">
+              <div class="css" style="width: 50%;"></div>
+            </div>
+          </div>
+          <div>
+            <div class="javascript-range flex justify-between">
+              <p style="margin: 0;">JAVASCRIPT</p>
+              <p style="margin: 0;">5%</p>
+            </div>
+            <div class="range ">
+              <div class="javascript " style="width: 5%;"></div>
+            </div>
+          </div>
+        </div>
+      </section >
+      <section class="about-me sm:w-[50%] mt-[100px] w-[90%]  pt-[35px] sm:pl-[20px]">
+        <h2 class="mb-5 mt-[-120px] text-[30px]">About me</h2>
         <p>
           Curabitur is not the best time for the players who have read the book.
           It was an architrave, it was a layer of financing and, at the same
@@ -38,7 +85,7 @@
           Mauris flatters the elit, needs the tincidunt nibh pulvinar a. Vivamus
           suscept tortor eget felis porttitor volutpat. The building and the
           yard is more important than the vehicle element but it is important to
-          the owner. ferry at sea
+          the owner. ferry at se
         </p>
         <br />
         <p>
@@ -46,109 +93,61 @@
           be in lacinia, for that element.
         </p>
       </section>
-      <section class="profile-info">
-        <div class="profile">
-          <div>
-            <img
-              src="./download.jpg"
-            />
-          </div>
-          <div>
-            <p><b>Name:</b> Rofiyat Kamorudeen</p>
-            <br />
-            <p><b>Profile:</b> Frontend Developer</p>
-            <br />
-            <p><b>Email:</b> rofeehartkam@gmail.com</p>
-            <br />
-            <p><b>Phone:</b> +234 703-5678-122</p>
-          </div>
-        </div>
-        <div class="skills">
-          <h3>Skills</h3>
-          <div>
-            <div class="html-range">
-              <p>HTML</p>
-              <p>80%</p>
-            </div>
-            <div class="range">
-              <div class="html"></div>
-            </div>
-          </div>
-          <div>
-            <div class="css-range">
-              <p>CSS</p>
-              <p>50%</p>
-            </div>
-            <div class="range">
-              <div class="css"></div>
-            </div>
-          </div>
-          <div>
-            <div class="javascript-range">
-              <p>JAVASCRIPT</p>
-              <p>5%</p>
-            </div>
-            <div class="range">
-              <div class="javascript"></div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
     <div id="resume">
       <div class="resume-info">
-        <h1>Resume</h1>
-        <p>His needs result from something he wants to escape from</p>
+        <h1 class="font-bold text-[30px] mt-[60px] text-center">Resume</h1>
+        <p class="text-center">His needs result from something he wants to escape from</p>
       </div>
-      <div class="resume-details">
-        <div class="education">
-          <div class="summary">
-            <h1>Summary</h1>
-            <div id="brandon">
+      <div class="">
+        <div class="education relative flex h-[fit-content] w-[90%] m-[auto] justify-between flex-wrap">
+          <div class="w-full md:w-[49%]">
+            <h1 class="text-[25px] after:content-[''] after:block after:w-[2px] after:bg-blue-600 after:h-[220px] after:absolute after:ml-[10px] font-bold mt-[50px]">Summary</h1>
+            <div id="brandon" class="p-[0px_20px]">
               <h2>BRANDON JOHNSON</h2>
-            <p>
+            <p class="mt-[10px]">
               Innovative and deadline-driven Graphic Designer with 3+ years of
               experience designing and developing user-centered digital/print
               marketing material from initial concept to final, polished
               deliverable
             </p>
-            <ul>
-              <li>Portland Par 127, Orlando, FL</li>
-              <li>(123) 456-7891</li>
-              <li>rofeehartkam@gmail.com</li>
+            <ul class="list-[disc] ml-[20px] mt-[20px]">
+              <li class="mb-[10px]">Portland Par 127, Orlando, FL</li>
+              <li class="mb-[10px]">(123) 456-7891</li>
+              <li class="mb-[10px]">rofeehartkam@gmail.com</li>
             </ul>
             </div>
-            <div class="edu">
-              <h1>Education</h1>
+            <div class="edu relative">
+              <h1 class="text-[25px] font-bold mt-[30px] after:content-[''] after:block after:w-[2px] after:bg-blue-600 after:h-[380px] after:absolute after:ml-[10px]">Education</h1>
               <div id="master">
-                <h2>MASTER OF FINE ARTS & GRAPHICS DESIGN</h2>
-              <p style="font-size: 15px; margin-left: 45px;">
+                <h2 class="ml-[20px]">MASTER OF FINE ARTS & GRAPHICS DESIGN</h2>
+              <p class="ml-[20px] mt-[10px]" style="font-size: 15px; margin-left: 45px;">
                 <b>2015 - 2016</b>
               </p>
-              <p>Rochester Institute of Technology, Rochester, NY</p>
-              <p>Those who leave will be forgiven. And if any one should work at the time, he should be just.
+              <p class="ml-[20px] mt-[10px]">Rochester Institute of Technology, Rochester, NY</p>
+              <p class="ml-[20px] mt-[10px]">Those who leave will be forgiven. And if any one should work at the time, he should be just.
                  But those pleasures which mark the sands of the port of Nerada as the most worthy of the gentle</p>
               </div>
               <div id="bachelor">
-                <h2>BACHELOR OF FINE ARTS & GRAPHICS DESIGN</h2>
-              <p style="font-size: 15px; margin-left: 45px;">
+                <h2 class="ml-[20px] mt-[30px]">BACHELOR OF FINE ARTS & GRAPHICS DESIGN</h2>
+              <p class="mt-[10px]" style="font-size: 15px; margin-left: 45px;">
                 <b>2015 - 2016</b>
               </p>
-              <p>Rochester Institute of Technology, Rochester, NY</p>
-              <p>Those who leave will be forgiven. And if any one should work at the time, he should be just.
+              <p class="ml-[20px] mt-[10px]">Rochester Institute of Technology, Rochester, NY</p>
+              <p class="ml-[20px] mt-[10px]">Those who leave will be forgiven. And if any one should work at the time, he should be just.
                  But those pleasures which mark the sands of the port of Nerada as the most worthy of the gentle</p>
               </div>
           </div>
         </div>
-        <div class="pro-experience">
-          <h1>Professional Experience</h1>
+        <div class="pro-experience w-full md:w-[49%] mt-[50px] relative">
+          <h1 class="text-[25px] font-bold after:content-[''] after:block after:w-[2px] after:bg-blue-600 after:h-[620px] after:md:h-[660px] after:absolute after:ml-[10px]">Professional Experience</h1>
           <div id="senior">
-            <h2>SENIOR GRAPHIC DESIGN SPECIALIST</h2>
-          <p style="font-size: 15px; margin-left: 45px;">
+            <h2 class="ml-[20px]">SENIOR GRAPHIC DESIGN SPECIALIST</h2>
+          <p class="mt-[10px]" style="font-size: 15px; margin-left: 45px;">
             <b>2019 - Present</b>
           </p>
-          <p>Experion, New York, NY</p>
-          <ul>
+          <p class="ml-[20px] mt-[10px]">Experion, New York, NY</p>
+          <ul class="list-disc ml-[40px] mt-[10px]">
             <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
             <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project</li>
             <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
@@ -156,12 +155,12 @@
           </ul>
           </div>
           <div id="specialist">
-            <h2>GRAPHIC DESIGN SPECIALIST</h2>
-          <p style="font-size: 15px; margin-left: 45px;">
+            <h2 class="ml-[20px] mt-[30px]">GRAPHIC DESIGN SPECIALIST</h2>
+          <p class="mt-[10px]" style="font-size: 15px; margin-left: 45px;">
             <b>2017 - 2018</b>
           </p>
-          <p>Stepping Stone Advertising, New York, NY</p>
-          <ul>
+          <p class="ml-[20px] mt-[10px]">Stepping Stone Advertising, New York, NY</p>
+          <ul class="list-disc ml-[40px] mt-[10px]">
             <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
             <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project</li>
             <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
@@ -173,7 +172,7 @@
     </div>
     <div id="services">
       <div class="services-info">
-        <h1>Services</h1>
+        <h1 class="font-bold text-[30px]">Services</h1>
         <p>His needs result from something he wants to escape from</p>
       </div>
       <div class="services-list">
@@ -221,7 +220,7 @@
         </div>
       </div>
     </div>
-    <div class="clients">
+    <div class="clients md:flex-row flex-col md:h-[400px] h-[600px]">
       <div class="numbers">
         <h1>233</h1>
         <p>Clients</p>
@@ -241,7 +240,7 @@
     </div>
     <div id="portfolio">
       <div class="portfolio-info">
-        <h1>Portfolio</h1>
+        <h1 class="font-bold text-[30px]">Portfolio</h1>
         <p>His needs result from something he wants to escape from</p>
         <a href="#portfolio">ALL</a>
       </div>
@@ -262,7 +261,7 @@
     </div>
     <div id="pricing">
       <div class="pricing-info">
-        <h1>Pricing</h1>
+        <h1 class="font-bold text-[30px]">Pricing</h1>
         <p>His needs result from something he wants to escape from</p>
       </div>
       <div class="pricing-lists">
@@ -294,10 +293,10 @@
     </div>
     <div id="contact">
       <div class="contact-info">
-        <h1>Contact</h1>
+        <h1 class="font-bold text-[30px]">Contact</h1>
         <p>His needs result from something he wants to escape from</p>
       </div>
-      <div class="contact-address">
+      <div class="contact-address h-[400px] lg:h-[100px] flex-col lg:flex-row">
         <div class="address">
           <i class="fa-solid fa-location-dot"></i>
           <div>

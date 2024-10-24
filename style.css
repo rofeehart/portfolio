@@ -1,4 +1,4 @@
-a{
+a {
   text-decoration: none;
   border-bottom: none;
 }
@@ -11,10 +11,10 @@ a{
   text-decoration: none;
   scroll-behavior: smooth;
 }
-:root{
+:root {
   --p-font: 18px;
 }
-nav{
+nav {
   width: 100vw;
   position: fixed;
   top: 0px;
@@ -36,8 +36,8 @@ nav li:hover::after {
     width: 100%;
   }
 }
-.info{
-  background: url(./bg.jpg);
+.info {
+  background: url(./bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -51,7 +51,7 @@ nav li:hover::after {
   position: relative;
   isolation: isolate;
 }
-.info::after{
+.info::after {
   content: "";
   position: absolute;
   top: 0;
@@ -62,59 +62,68 @@ nav li:hover::after {
   opacity: 0.5;
   background-color: rgb(0, 0, 0);
 }
-.container{
+.container {
   height: fit-content;
 }
-.profile-info p{
+.profile-info p {
   margin-bottom: 0;
 }
-.html-range p,.css-range p,.javascript-range p{
+.html-range p,
+.css-range p,
+.javascript-range p {
   height: fit-content;
 }
-.range{
+.range {
   width: 100%;
   height: 10px;
-  background-color: rgb(202, 202, 207);
+  background-color: gray;
 }
-.range div{
+.range div {
   background-color: blue;
+  border-radius: 0 10px 10px 0;
   height: 100%;
 }
-.about-me h2::after{
+.html{
+  width: 90%;
+  height: 100%;
+ }
+.about-me h2::after {
   content: "";
   display: block;
   width: 13%;
   height: 3px;
-  background-color: blue;
+  background-color: gray;
 }
-.about-me p{
+.about-me p {
   font-size: var(--p-font);
   margin: 0;
 }
-#services{
-  margin-top: 10rem;
+#resume {
+  margin-top: 5rem;
   text-align: center;
 }
-.services-info h1::after{
+.resume-info h1::after {
   content: "";
   display: block;
   width: 70px;
   height: 3px;
-  background-color: blue;
+  background-color: gray;
   margin: auto;
   margin-top: 15px;
 }
-.services-info p{
+.resume-info p {
   margin-top: 15px;
 }
-.services-list{
+.resume-list {
+  margin: auto;
   margin-top: 60px;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
 }
-.services-I{
+.resume-I {
   border-radius: 20px;
   width: 22rem;
   height: 20rem;
@@ -122,12 +131,11 @@ nav li:hover::after {
   padding: 50px 30px;
   box-shadow: rgba(0, 0, 0, 0.219) 3px 3px 30px;
 }
-.services-I:hover{
-  cursor: pointer;
+.resume-I:hover {
   margin-top: -10px;
-  box-shadow: blue 0 10px 10px -5px;
+  box-shadow: blue -5px 15px 30px;
 }
-.services-II{
+.resume-II {
   border-radius: 20px;
   width: 22rem;
   height: 20rem;
@@ -135,198 +143,56 @@ nav li:hover::after {
   padding: 50px 30px;
   box-shadow: rgba(0, 0, 0, 0.219) 3px 3px 30px;
 }
-.services-II:hover{
-  cursor: pointer;
+.resume-II:hover {
   margin-top: -10px;
-  box-shadow: blue 0 10px 10px -5px;
+  box-shadow: blue 5px 15px 30px;
 }
-.services-III{
-  border-radius: 20px;
-  width: 22rem;
-  height: 20rem;
-  text-align: left;
-  padding: 50px 30px;
-  box-shadow: rgba(0, 0, 0, 0.219) 3px 3px 30px;
-}
-.services-III:hover{
-  cursor: pointer;
-  margin-top: -10px;
-  box-shadow: blue 0 10px 10px -5px;
-}
-.services-IV{
-  border-radius: 20px;
-  width: 22rem;
-  height: 20rem;
-  text-align: left;
-  padding: 50px 30px;
-  box-shadow: rgba(0, 0, 0, 0.219) 3px 3px 30px;
-}
-.services-IV:hover{
-  cursor: pointer;
-  margin-top: -10px;
-  box-shadow: blue 0 10px 10px -5px;
-}
-.services-V{
-  border-radius: 20px;
-  width: 22rem;
-  height: 20rem;
-  text-align: left;
-  padding: 50px 30px;
-  box-shadow: rgba(0, 0, 0, 0.219) 3px 3px 30px;
-}
-.services-V:hover{
-  cursor: pointer;
-  margin-top: -10px;
-  box-shadow: blue 0 10px 10px -5px;
-}
-.services-VI{
-  border-radius: 20px;
-  width: 22rem;
-  height: 20rem;
-  text-align: left;
-  padding: 50px 30px;
-  box-shadow: rgba(0, 0, 0, 0.219) 3px 3px 30px;
-}
-.services-VI:hover{
-  cursor: pointer;
-  margin-top: -10px;
-  box-shadow: blue 0 10px 10px -5px;
-}
-i{
-  font-size: 30px;
-  border-radius: 50%;
-  padding: 20px;
-  color: white;
-  background-color: blue;
-}
-.services-list h3, p{
-  margin-top: 20px;
-}
-.services-list h3:hover{
-  color: blue;
-}
-.clients{
-  margin-top: 70px;
-  background: url(./bg3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100vw;
-  color: white;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-evenly;
-  position: relative;
-  isolation: isolate;
-}
-.clients::after{
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  opacity: 0.5;
-  background-color: rgba(24, 8, 250, 0.582);
-}
-.clients h1{
-  font-size: 50px;
-}
-#portfolio{
-  margin-top: 10rem;
+#portfolio {
+  margin-top: 5rem;
   text-align: center;
 }
-.portfolio-info h1::after{
+.portfolio-info h1::after {
   content: "";
   display: block;
   width: 70px;
   height: 3px;
-  background-color: blue;
+  background-color: gray;
   margin: auto;
   margin-top: 15px;
 }
-.portfolio-info p{
+.portfolio-info p {
   margin-top: 15px;
   margin-bottom: 60px;
 }
-.portfolio-info a{
-  color: black;
-}
-.portfolio-info a:hover{
-  color: blue;
-}
-.portfolio-lists{
+.portfolio-lists {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px 25px;
   justify-content: center;
 }
-.portfolio-lists img{
+.portfolio-lists img {
   width: 350px;
   height: 250px;
   box-shadow: rgba(0, 0, 0, 0.356) 2px 2px 10px;
 }
-#pricing{
-  margin-top: 10rem;
+.portfolio-lists img:hover{
+  box-shadow: blue 2px 2px 20px;
+}
+#contact {
+  margin-top: 5rem;
   text-align: center;
 }
-.pricing-info h1::after{
+.contact-info h1::after {
   content: "";
   display: block;
   width: 70px;
   height: 3px;
-  background-color: blue;
+  background-color: gray;
   margin: auto;
   margin-top: 15px;
 }
-.pricing-info p{
-  margin-top: 15px;
-}
-.pricing-lists{
-  margin: auto;
-  margin-top: 60px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px 70px;
-  width: 80vw;
-}
-.portrait{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 500px;
-  padding-bottom: 10px;
-  border-bottom: 1px dashed;
-}
-.portrait p{
-  margin-top: 10px;
-  text-align: right;
-  color: blue;
-}
-.portrait h2{
-  text-align: left;
-  font-weight: 300;
-  font-size: 23px;
-}
-#contact{
-  margin-top: 10rem;
-  text-align: center;
-}
-.contact-info h1::after{
-  content: "";
-  display: block;
-  width: 70px;
-  height: 3px;
-  background-color: blue;
-  margin: auto;
-  margin-top: 15px;
-}
-.contact-address{
+.contact-address {
   margin: auto;
   margin-top: 50px;
   display: flex;
@@ -334,60 +200,63 @@ i{
   width: 80vw;
   box-shadow: rgba(0, 0, 0, 0.171) 2px 2px 15px;
 }
-.address{
+.address {
   text-align: left;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.address:hover{
+.address:hover {
   cursor: pointer;
 }
-.contact-address i{
-  height: 70px;
-  width: 70px;
+.contact-address i {
+  font-size: 20px;
+  padding: 20px;
+  height: 60px;
+  width: 60px;
   text-align: center;
-  color: blue;
+  color: rgb(0, 0, 0);
   background-color: white;
   border-color: blue;
   border: solid;
+  border-radius: 50%;
   border-width: 1px;
 }
-.contact-address i:hover{
+.contact-address i:hover {
   color: white;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
 }
-.address p{
+.address p {
   margin-top: 5px;
   font-size: 15px;
 }
-.call{
+.call {
   text-align: left;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.call:hover{
+.call:hover {
   cursor: pointer;
 }
-.call p{
+.call p {
   margin-top: 5px;
   font-size: 15px;
 }
-.email{
+.email {
   text-align: left;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.email:hover{
+.email:hover {
   cursor: pointer;
 }
-.email p{
+.email p {
   margin-top: 5px;
   font-size: 15px;
 }
-.input{
+.input {
   margin: auto;
   margin-top: 30px;
   box-shadow: rgba(0, 0, 0, 0.171) 2px 2px 15px;
@@ -398,49 +267,51 @@ i{
   justify-content: center;
   gap: 20px;
 }
-.name{
+.name {
   flex: 1 1 250px;
   height: 30px;
   width: 49%;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.281);
 }
-.mail{
+.mail {
   flex: 1 1 250px;
   height: 30px;
   width: 49%;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.281);
 }
-.subject{
+.subject {
   height: 30px;
   width: 100%;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.281);
 }
-.message{
+.message {
   height: 200px;
   width: 100%;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.281);
 }
-.input button{
+.input button {
   padding: 11px;
   width: 170px;
   border-radius: 20px;
   border: none;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
-.input button:hover{
+.input button:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 255, 0.596);
+  background-color: white;
+  border: solid black 2px;
+  color: black;
 }
-footer{
+footer {
   margin-top: 50px;
   width: 100vw;
   height: 200px;
-  background-color: rgb(52, 52, 243);
+  background-color: rgb(0, 0, 0);
   color: white;
   display: flex;
   flex-direction: column;
@@ -448,7 +319,7 @@ footer{
   align-items: center;
   justify-content: center;
 }
-footer i{
+footer i {
   color: white;
   border-color: white;
   border: solid;
@@ -457,327 +328,15 @@ footer i{
   height: 40px;
   font-size: 17px;
   padding: 10px;
+  border-radius: 50%;
   margin: 5px;
-  background-color: rgb(52, 52, 243);
 }
-footer p{
+footer i:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+footer p {
   margin-top: -5px;
 }
-/* @media (min-width:700px) and (max-width:1150px){
-  *{
-    margin: 0%;
-    padding: 0%;
-  }
-  nav{
-    padding: 40px;
-    width: 100vw;
-  }
-  .logo{
-    font-size: 40px;
-  }
-  nav ul{
-    gap: 10px;
-    font-size: 16px;
-  }
-  .info h1{
-    font-size: 40px;
-  }
-  .info p{
-    font-size: 25px;
-  }
-  #about{
-    height: 49rem;
-    width: 80%;
-  }
-  .profile{
-    flex-direction: column;
-  }
-  .profile img{
-    width: 100%;
-    height: 350px;
-  }
-  .range{
-    width: 100%;
-  }
-  .about-me{
-    margin-left: 30px;
-  }
-  .pro-experience{
-    top: 48rem;
-    left: -34rem;
-  }
-  .resume-details{
-    margin-left: 50px;
-    width: 90%;
-  }
-  .summary h1::after{
-    height: 180px;
-  }
-  #brandon p{
-    width: 80vw;
-  }
-  .edu h1::after{
-    height: 300px;
-  }
-  #master p{
-    width: 80vw;
-  }
-  #bachelor{
-    margin-top: -50px;
-  }
-  #bachelor p{
-    width: 80vw;
-  }
-  .pro-experience h1::after{
-    height: 620px;
-    margin-top: 20px;
-  }
-  #senior ul{
-    width: 80vw;
-  }
-  #specialist{
-    margin-top: -20px;
-  }
-  #specialist ul{
-    width: 80vw;
-  }
-  #services{
-    margin-top: 80rem;
-  }
-  .clients{
-    display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 100px 100px;
-    align-content: center;
-    gap: 80px;
-    height: 600px;
-  }
-  .numbers{
-    width: 150px;
-  }
-  .contact-address{
-    flex-direction: column;
-    gap: 40px;
-    height: 350px;
-    padding: 30px;
-  }
-}
-@media (max-width:700px){
-  nav{
-    padding: 30px;
-    width: 100vw;
-  }
-  .logo{
-    font-size: 30px;
-  }
-  nav ul{
-    gap: 10px;
-    font-size: 14px;
-  }
-  .info h1{
-    font-size: 30px;
-  }
-  .info p{
-    font-size: 20px;
-  }
-  #about{
-    height: 85rem;
-    width: 91%;
-    flex-direction: column-reverse;
-  }
-  .profile{
-    flex-direction: column;
-  }
-  .profile-info{
-    max-width: 100%;
-  }
-  .profile img{
-    width: 76vw;
-    min-height: 60vh;
-  }
-  .profile p{
-    width: 70vw;
-  }
-  .skills h3{
-    width: 70vw;
-  }
-  .range{
-    width: 75vw;
-  }
-  .html-range{
-    width: 75vw;
-  }
-  .css-range{
-    width: 75vw;
-  }
-  .javascript-range{
-    width: 75vw;
-  }
-  .about-me p{
-    width: 75vw;
-  }
-  .about-me{
-    width: 23rem;
-    margin-left: 0;
-  }
-  .about-me h2::after{
-    margin-top: 10px;
-  }
-  .pro-experience{
-    top: 50rem;
-    left: -34rem;
-  }
-  .resume-details{
-    width: 90%;
-    margin-left: 0%;
-  }
-  .resume-details h1{
-    font-size: 25px;
-    width: 100%;
-  }
-  .edu h1{
-    left: 20px;
-    width: 90vw;
-    top: 330px;
-  }
-  .edu h1::after{
-    margin-left: -1px;
-    height: 390px;
-  }
-  .summary{
-    margin-left: 20px;
-  }
-  #brandon h2{
-    width: 70vw;
-  }
-  #brandon p{
-    width: 80vw;
-    font-size: 17px;
-  }
-  #brandon ul{
-    width: 70vw;
-  }
-  #brandon li{
-    font-size: 17px;
-  }
-  #master{
-    top: 380px;
-    left: 11px;
-  }
-  #master h2{
-    width: 87vw;
-  }
-  #master p{
-    width: 80vw;
-    font-size: 17px;
-  }
-  #resume h2{
-    font-size: var(--p-font);
-  }
-  #bachelor{
-    top: 600px;
-    left: 11px;
-  }
-  #bachelor h2{
-    width: 87vw;
-  }
-  #bachelor p{
-    width: 80vw;
-    font-size: 17px;
-  }
-  .pro-experience{
-    margin-top: 50px;
-  }
-  .pro-experience h1{
-    left: 560px;
-    width: 90vw;
-  }
-  .pro-experience h1::after{
-    margin-top: 30px;
-    margin-left: -1px;
-    height: 750px;
-  }
-  #senior{
-    top: -230px;
-  }
-  #senior h2{
-    width: 80vw;
-  }
-  #senior p{
-    font-size: 17px;
-    width: 70vw;
-  }
-  #senior ul{
-    width: 81vw;
-  }
-  #senior li{
-    font-size: 17px;
-  }
-  #specialist{
-    top: 160px;
-  }
-  #specialist h2{
-    width: 70vw;
-  }
-  #specialist p{
-    font-size: 17px;
-    width: 70vw;
-  }
-  #specialist ul{
-    width: 81vw;
-  }
-  #specialist li{
-    font-size: 17px;
-  }
-  #services{
-    margin-top: 90rem;
-  }
-  .services-I{
-    width: 29rem;
-    height: 19rem;
-  }
-  .services-II{
-    width: 29rem;
-    height: 19rem;
-  }
-  .services-III{
-    width: 29rem;
-    height: 19rem;
-  }
-  .services-IV{
-    width: 29rem;
-    height: 19rem;
-  }
-  .services-V{
-    width: 29rem;
-    height: 19rem;
-  }
-  .services-VI{
-    width: 29rem;
-    height: 19rem;
-  }
-  .clients{
-    display: grid;
-    gap: 80px;
-    padding: 90px;
-    height: 800px;
-  }
-  .portrait h2::after{
-    width: 200px;
-  }
-  .portrait p::after{
-    width: 250px;
-  }
-  .portrait p{
-    margin-top: 2px;
-  }
-  .pricing-lists{
-    width: 20vw;
-  }
-  .contact-address{
-    flex-direction: column;
-    gap: 40px;
-    height: 350px;
-    padding: 30px;
-  }
-} */

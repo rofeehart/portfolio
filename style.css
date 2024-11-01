@@ -20,6 +20,12 @@ nav {
   top: 0px;
   z-index: 1;
 }
+@media (min-width:300px) {
+  nav h1{
+    margin: 10px;
+    margin-left: -10px;
+  }
+}
 nav li:hover::after {
   content: "";
   display: block;

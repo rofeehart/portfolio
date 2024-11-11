@@ -180,6 +180,7 @@ nav li:hover::after {
 .portfolio-lists img {
   width: 350px;
   height: 250px;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.356) 2px 2px 10px;
 }
 .portfolio-lists img:hover{
